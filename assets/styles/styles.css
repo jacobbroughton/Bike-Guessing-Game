@@ -10,21 +10,28 @@ html, body {
     background-color: lightcyan;
     padding-top: 2%;
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #topRow{
     font-family: Montserrat;
     margin-bottom: -3.5%;
+
 }
 
 h1{
     margin-top: 2%;;
     font-weight: bold;
-    font-size: 2rem;
-    height: 20%;
+    font-size: 3rem;
+    margin: 0;
 }
-@media(max-width: 992px) {
-
+@media(max-width: 800px) {
+    h1{
+        font-size: 2.75rem;
+    }
 }
 
 #photoRow{
@@ -32,6 +39,8 @@ h1{
     justify-content: center;
     align-content: center;
     height: 50%;
+    width: 100%;
+
 }
 
 #randomPhotoDiv {
@@ -39,32 +48,73 @@ h1{
     max-width: 90%;
     height: 90%;
     width: auto;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 800px) {
+    #randomPhotoDiv{
+        height: 85%;
+    }
+}
+
+@media(max-width: 665px) {
+    #randomPhotoDiv{
+        height: 80%;
+    }
+
+    #photoRow{
+        height: 40%;
+    }
+}
+
+@media(max-width: 665px) {
+    #randomPhotoDiv{
+        height: 80%;
+    }
+}
+
+@media(max-width: 585px) {
+    #randomPhotoDiv{
+        height: 85%;
+    }
 }
 
 #infoRow{
-    margin-top: -5%;
-    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 #letterSpaces{
-    font-size: 3vh;
+    font-size: 1.75rem;
     font-family: Montserrat;
 }
 
 
 #pointsDiv{
-    font-size: 3vh;
+    font-size: 1.75rem;
     font-family: Montserrat;
 }
 
 #livesDiv{
-    font-size: 3vh;
+    font-size: 1.75rem;
     font-family: Montserrat;
 }
 
 #guessedLetters{
-    font-size: 3vh;
+    font-size: 1.75rem;
     font-family: Montserrat;
+}
+
+#buttons{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 #topButtonRow{
@@ -78,20 +128,46 @@ h1{
     margin-top: -2%;
 }
 
-.letter-{
-    display: flex;
-}
 
 button {
     display: flex;
     border-radius: 4px;
     font-family: Montserrat;
-    height: 4vh;
-    width: 4vh;
-    font-size: 2vh;
+    font-size: 1.5rem;
+    margin: 1%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
     justify-content: center;
-    align-content: center;
-    text-align: center;
+    align-items: center;
+}
+
+@media(max-width: 800px) {
+    button{
+        height: 35px;
+        width: 35px;
+        font-size: 1.35rem;
+    }
+}
+
+@media(max-width: 600px) {
+    button{
+        height: 30px;
+        width: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 499px) {
+    button{
+        height: 25px;
+        width: 25px;
+        font-size: 0.9rem;
+    }
+}
+
+span{
+    margin: 0;
 }
 
 
